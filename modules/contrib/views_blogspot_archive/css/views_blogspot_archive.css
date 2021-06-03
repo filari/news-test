@@ -1,0 +1,40 @@
+
+/* Remove default bullets */
+.vba-archive ul {
+  list-style-type: none;
+  display: none;
+}
+
+/* Remove margins and padding from the parent ul */
+.vba-archive > ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.vba-archive .caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.vba-archive .caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.vba-archive .caret-down::before {
+  transform: rotate(90deg);
+}
+
+.vba-archive {
+  display: block !important;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.vba-archive .active {
+  display: block;
+}

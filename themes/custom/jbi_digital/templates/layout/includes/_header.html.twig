@@ -1,0 +1,27 @@
+<!-- Start Header Area -->
+<header id="header">
+  <div class="container">
+    <div class="row align-items-center justify-content-between d-flex">
+      <div id="logo">
+        {#<a href="index.html"><img src="assets/img/logo.png" alt="" title=""/></a>#}
+        {{ page.branding }}
+      </div>
+      <nav id="nav-menu-container">
+
+        {{ page.primary_menu }}
+
+        {% if logged_in == false %}
+        <ul class="nav-menu">
+
+          <li><a href="{{ url('<front>')|render ~ '/user/login' }}">{{ 'Login'|t }}</a></li>
+          <li><a href="{{ url('<front>')|render ~ '/user/register' }}" class="btn btn-primary text-white"><i class="fa fa-user-plus"></i> <em>{{ 'Signup'|t }}</em></a></li>
+        </ul>
+        {% endif %}
+
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- Start Header Area -->
+
+

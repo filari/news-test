@@ -1,0 +1,16 @@
+# Main theme library.
+global-styling:
+  js:
+    assets/js/vendor/popper.min.js: {}
+    assets/js/vendor/bootstrap.min.js: {}
+    assets/js/custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900|Roboto:300,400,500,700: {type: external, minified: true}
+      assets/css/linearicons.css: {}
+      assets/css/font-awesome.min.css: {}
+      assets/css/bootstrap.css: {}
+      assets/css/main.css: {}

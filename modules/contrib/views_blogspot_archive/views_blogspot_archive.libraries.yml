@@ -1,0 +1,7 @@
+views_blogspot_archive:
+  version: 1.x
+  css:
+    theme:
+      css/views_blogspot_archive.css: {}
+  js:
+    js/views_blogspot_archive.js: {}
